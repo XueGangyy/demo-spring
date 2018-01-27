@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace必须指向Dao接口 -->
+<mapper namespace="com.example.demo.mapper.UserMapper">
+    <!--<resultMap id="UserDto" type="com.handTest.pojo.User" >-->
+        <!--<result column="user_id" property="user_id" />-->
+        <!--<result column="user_name" property="user_name" />-->
+        <!--<result column="user_password" property="user_password" />-->
+    <!--</resultMap>-->
+
+    <!-- 根据ID查询数据 -->
+    <select id="findAllUsers" resultMap="com.example.demo.pojo.User">
+        SELECT * FROM user u WHERE 1=1;
+    </select>
+</mapper>

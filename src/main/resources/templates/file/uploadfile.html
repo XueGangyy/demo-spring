@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" th:src="@{/lib/jquery-3.2.1.min.js}"></script>
+</head>
+<body>
+<div>
+    <form enctype="multipart/form-data" method="post" id="fileform">
+        <input type="file" name="file">
+        <input type="submit" value="上传" onclick="uploadFile()">
+    </form>
+</div>
+</body>
+<script type="text/javascript" th:src="@{/js/file.js}"></script>
+</html>
